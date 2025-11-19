@@ -1,0 +1,48 @@
+name: env_isaaclab
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip=23.0
+  - numpy=1.24.*
+  - pyyaml=6.*
+  - hydra-core=1.1.*
+  - omegaconf=2.*
+  - matplotlib=3.6.*
+  - scipy=1.10.*
+  - cloudpickle=2.*
+  - tqdm=4.64.*
+  - pillow=9.*
+  - ruamel.yaml=0.17.*
+  - psutil=5.9.*
+  - pytorch=2.1.*
+  - torchvision=0.16.*
+  - cudatoolkit=11.8
+  - pip:
+    - stable-baselines3==2.1.0
+    - gymnasium==0.28.1
+    - tensorboard==2.13.0
+    - tensorboardX==2.6
+    - ruamel.yaml==0.17.21
+    - omegaconf==2.1.1
+    - isaacgym==0.6.0    # Optional: if you need IsaacGym; may require matching CUDA/PyTorch
+    - torch==2.1.0       # pinned to match conda pytorch; pip fallback if needed
+    - typing_extensions
+
+# Important notes
+# 1) Isaac Sim / IsaacLab (omni.* packages and the Isaac Sim binaries) are provided by NVIDIA
+#    and are NOT installed via this environment file. Follow NVIDIA's Isaac Sim / Omniverse
+#    installation instructions to make Isaac Sim available on your machine.
+# 2) `isaaclab` and `isaaclab_tasks` in this workspace are local Python packages (modules).
+#    After creating the conda env, install the local package in editable mode from the repo root:
+#      conda activate env_isaaclab
+#      pip install -e .
+#    This will make `isaaclab` and `isaaclab_tasks` importable.
+# 3) CUDA / PyTorch: This file requests `cudatoolkit=11.8` and `pytorch=2.1.*` from the
+#    `pytorch` channel. Adjust `cudatoolkit` or install a CPU-only PyTorch if your machine does
+#    not have a compatible GPU or drivers. If you prefer CPU-only, replace the `pytorch`,
+#    `torch` and `cudatoolkit` entries with the CPU-only conda package (or remove cudatoolkit).
+# 
+# conda env create -f environment.yml

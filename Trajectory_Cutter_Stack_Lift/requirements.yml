@@ -1,0 +1,11 @@
+name: trajectory-cutter
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - numpy
+  - h5py
+  - pip
+
+# conda env create -f environment.yml
