@@ -10,7 +10,7 @@ This repository contains scripts that can be used to train AIRL with Isaac Lab d
 - `play_demos_RoboSuite.py` - simulate trajectories in the Robosuite environment.
 - `export_reward_net.py` - traces the reward net to create a .pt file, which is compatible with IsaacLab.
 - `Recorded_Data/` - these files are tailored for the use of data, collected with the trajectory recorder:
-	- `hdf5TOnpz_converter.py` - converts the .hdf5 dataset from Isaac Lab in a .npz dtatset (compatible with Robosuite).
+	- `hdf5TOnpz_converter.py` - converts the .hdf5 dataset from Isaac Lab in a .npz dataset (compatible with Robosuite).
 	- `prepare_training_npz.py` - translates the .npz dataset in Robosuite dimensions.
 - `Synthetic_Data/` - these files are tailored for the use of data, collected with the trajectory cutter:
     - `hdf5TOnpz_converter.py` - converts the .hdf5 dataset from Isaac Lab in a .npz dtatset (compatible with Robosuite).
