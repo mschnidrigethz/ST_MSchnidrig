@@ -7,8 +7,9 @@ This repository contains scripts that can be used to enhance the original Imitat
 - `README.md` - this file.
 - `requirements.yml` - requirements file.
 - `4a_airl_franka_lift.ipynb` - AIRL, applied on the cube-lift task.
-- `4b_airl_cartpole.ipynb` - Preexisting cartpole-AIRL demonstration (`4_train_airl.ipynb`), enhanced with visulizations of policies in various stages and additional RL training afterwards, using the reward net.
+- `4b_airl_cartpole.ipynb` - preexisting cartpole-AIRL demonstration (`4_train_airl.ipynb`), enhanced with visulizations of policies in various stages and additional RL training afterwards, using the reward net.
+- - `convert_reward_net.py` - convert reward net in IsaacLab compatible format.
 ## Where to integrate in Imitation
 
-- `4a_airl_franka_lift.ipynb` and `4b_airl_cartpole.ipynb`
+- `4a_airl_franka_lift.ipynb`, `4b_airl_cartpole.ipynb` and `convert_reward_net.py`
 	- add: `/imitation/docs/tutorials`
