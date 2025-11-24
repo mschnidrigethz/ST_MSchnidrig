@@ -34,7 +34,8 @@ This repository contains an Isaac-Lab based environment and training scripts use
 
 - `sb3_AIRL/`
 	- add: `scripts/reinforcement_learning/sb3_AIRL`
-
+- reward net
+	- add: `reward_nets/YOUR_REWARD_NET.pt`
 ## Usage
 
 If you want to use the custom environment, make sure to use `Isaac-Lift-Cube-IK-Abs-AIRL-v0`when specifying the environment in the commands.
